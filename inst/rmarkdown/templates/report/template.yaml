@@ -1,4 +1,4 @@
-name: Matt's First Template
+name: Flexdashboard Template
 description: >
-  Template for creating rmarkdown docs.
+  Template for creating a flexdashboard.
 create_dir: false
