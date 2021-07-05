@@ -4,6 +4,7 @@
 #' @import ggplot2
 #' @examples
 #' ggplot(mtcars, aes(mpg, wt, colour = factor(cyl))) + geom_point(size=4) +theme_corporate()
+#' @export
 
 theme_corporate <- function(){ 
   library(ggplot2)

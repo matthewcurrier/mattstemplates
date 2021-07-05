@@ -1,6 +1,6 @@
 Binding: create_project
 Title: Matts Project Template
-OpenFiles: README.md
+# OpenFiles: README.md
 # In the project you can also add icons (the icon should be a PNG, smaller than 64kb
 # and in the inst/rstudio/templates folder
 # Icon: name_of_pic.png
