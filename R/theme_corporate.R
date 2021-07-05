@@ -1,12 +1,14 @@
 #' Ggplot2 theme
 #' 
 #' @return A theme for ggplot2.
+#' @import ggplot2
 #' @examples
 #' ggplot(mtcars, aes(mpg, wt, colour = factor(cyl))) + geom_point(size=4) +theme_corporate()
-library(ggplot2)
-theme_corporate <- function(){ 
 
-  theme_minimal() %+replace%    #replace elements we want to change
+theme_corporate <- function(){ 
+  library(ggplot2)
+#  theme_minimal() %+replace%    #replace elements we want to change
+  theme_grey() %+replace%    #replace elements we want to change
     
     theme(
       
@@ -28,8 +30,8 @@ theme_corporate <- function(){
       
       plot.subtitle = element_text(          #subtitle
         # family = font,            #font # family
-        size = 12,
-        face = 'bold',            #bold typeface
+        size = 22,
+#        face = 'bold',            #bold typeface
         margin = margin(t=7)),               #font size
       
       plot.caption = element_text(           #caption
@@ -39,11 +41,11 @@ theme_corporate <- function(){
       
       axis.title = element_text(             #axis titles
         # family = font,            #font # family
-        size = 10),               #font size
+        size = 18),               #font size
       
       axis.text = element_text(              #axis text
         # family = font,            #axis famuly
-        size = 9),                #font size
+        size = 17),                #font size
       
       axis.text.x = element_text(            #margin for axis text
         margin=margin(5, b = 10))
